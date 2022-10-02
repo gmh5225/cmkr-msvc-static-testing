@@ -58,6 +58,7 @@ endif()
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${hello_world_SOURCES})
 
+set_property(TARGET hello_world PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 unset(CMKR_TARGET)
 unset(CMKR_SOURCES)
 
