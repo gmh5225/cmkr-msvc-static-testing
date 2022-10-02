@@ -1,4 +1,4 @@
-# cmkr_for_beginners
+# cmkr_for_beginners_msvc_static
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
@@ -33,4 +33,5 @@ description = "A minimal cmkr project."
 [target.hello_world]
 type = "executable"
 sources = ["src/main.cpp"]
+msvc-static = true
 ```
