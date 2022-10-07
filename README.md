@@ -29,9 +29,9 @@ Under the hood cmkr generates the `CMakeLists.txt` required to build this projec
 [project]
 name = "cmkr_for_beginners"
 description = "A minimal cmkr project."
+msvc-runtime = "static"
 
 [target.hello_world]
 type = "executable"
 sources = ["src/main.cpp"]
-msvc-static = true
 ```
