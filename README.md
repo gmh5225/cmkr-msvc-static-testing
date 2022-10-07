@@ -25,6 +25,7 @@ Then open the `.sln` (Windows) or run `make` (Unix) from the `build` directory.
 
 Under the hood cmkr generates the `CMakeLists.txt` required to build this project from the `cmake.toml` file:
 
+https://github.com/gmh5225/cmkr/blob/main/docs/examples/msvc-runtime.md
 ```toml
 [project]
 name = "cmkr_for_beginners"
