@@ -7,3 +7,5 @@ msvc-runtime = "static"
 [target.hello_world]
 type = "executable"
 sources = ["src/main.cpp"]
+msvc-runtime = "static"
+
