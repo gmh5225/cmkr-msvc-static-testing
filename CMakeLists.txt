@@ -6,6 +6,7 @@ cmake_minimum_required(VERSION 3.15)
 # Enable support for MSVC_RUNTIME_LIBRARY
 cmake_policy(SET CMP0091 NEW)
 
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
 	message(FATAL_ERROR "In-tree builds are not supported. Run CMake from a separate directory: cmake -B build")
 endif()
@@ -60,11 +61,6 @@ if(NOT CMKR_VS_STARTUP_PROJECT)
 endif()
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${hello_world_SOURCES})
-
-set_target_properties(hello_world PROPERTIES
-	MSVC_RUNTIME_LIBRARY
-		"MultiThreaded$<$<CONFIG:Debug>:Debug>"
-)
 
 unset(CMKR_TARGET)
 unset(CMKR_SOURCES)
